@@ -32,6 +32,8 @@ helm install rynxs ./helm/rynxs -n rynxs --create-namespace -f helm/rynxs/values
 kubectl get pods -n rynxs -l app.kubernetes.io/name=rynxs
 ```
 
+**⚠️ Multi-zone requirement:** Production values use `whenUnsatisfiable: DoNotSchedule` for zone spread (hard constraint). If your cluster has fewer than 2 zones, pods will remain Pending. For single-zone clusters, override with `ScheduleAnyway` in custom values or use default values (no zone constraint).
+
 **Next step:** [`docs/PRODUCTION_CHECKLIST.md`](docs/PRODUCTION_CHECKLIST.md) — 10-step validation + 2-minute smoke test
 
 ---
@@ -263,26 +265,13 @@ Rynxs has been hardened and validated for **production deployment** with focus o
 
 ## Branch Guide
 
-Rynxs development is organized across multiple branches, each serving a specific purpose:
+Rynxs development is organized across multiple branches. **For production deployment, use `evo/deterministic-engine-v2`.**
 
-### `main` — Full Kubernetes Architecture
-**Purpose:** Stable, production-track branch with complete Kubernetes operator implementation
+### `evo/deterministic-engine-v2` — Production Hardening ⭐ **SHIP READY** (RECOMMENDED)
 
-**What's included:**
-- Kubernetes operator (CRD + reconciler)
-- Sandboxed execution (Kubernetes Jobs)
-- Policy enforcement (NetworkPolicy, RBAC)
-- Workspace management (PVC + audit trails)
-- Default-deny networking
+**Use this for production deployments.** This branch contains all production hardening completed in E1→E4→E2→E3 sprints.
 
-**Use case:** Deploy Rynxs with full Kubernetes orchestration and policy enforcement
-
-**Status:** Stable, recommended for evaluation and development
-
----
-
-### `evo/deterministic-engine-v2` — Production Hardening ⭐ **SHIP READY**
-**Purpose:** Production-ready branch with HA, S3 event log, observability, and hardening
+**Purpose:** Production-ready operator with HA, durable S3 event log, observability, and validated failover
 
 **What's included (on top of `main`):**
 - ✅ **Helm chart** (one-command deploy, production values)
@@ -299,6 +288,23 @@ Rynxs development is organized across multiple branches, each serving a specific
 **Documentation:**
 - [`docs/PRODUCTION_CHECKLIST.md`](docs/PRODUCTION_CHECKLIST.md) — Go-live validation
 - [`docs/MILESTONE_CHANGELOG.md`](docs/MILESTONE_CHANGELOG.md) — Evolution timeline (E1→E4→E2→E3→Hardening)
+
+---
+
+### `main` — Full Kubernetes Architecture
+
+**Purpose:** Stable operator baseline with Kubernetes orchestration and policy enforcement
+
+**What's included:**
+- Kubernetes operator (CRD + reconciler)
+- Sandboxed execution (Kubernetes Jobs)
+- Policy enforcement (NetworkPolicy, RBAC)
+- Workspace management (PVC + audit trails)
+- Default-deny networking
+
+**Use case:** Development, evaluation, and understanding the operator core
+
+**Status:** Stable baseline (for production, use `evo/deterministic-engine-v2`)
 
 ---
 
